@@ -25,18 +25,23 @@
       "carousel.lead": "从田园村庄到灯会夜市，每一处场景都能漫步、交谈、接取琐事。",
       "gameplay.eyebrow": "玩法",
       "gameplay.title": "一个普通人的日常修行",
-      "gameplay.lead": "没有战斗数值表。你只是走进村庄，把一件件小事做好。",
+      "gameplay.lead":
+        "没有战斗数值表。你只是走进村庄，把一件件小事做好——元素可挂任务与 AI 对话，也能随手拍照留念。",
       "gameplay.walk.title": "点击漫步",
       "gameplay.walk.body":
-        "点一下地面，角色会沿路径慢慢走过去。地图支持碰撞与视野移动。",
-      "gameplay.talk.title": "靠近交谈",
-      "gameplay.talk.body": "走到村民身边打开羊皮纸对话框：聊天，或查看他们正愁的琐事。",
-      "gameplay.quest.title": "邻里琐事",
-      "gameplay.quest.body": "补货、找猫、采药、扫院子……任务以谈话、跑腿、寻找与走访展开。",
+        "点一下地面，角色沿路径慢慢走过去。村口传送门通向河埠、后山、雪原与夜市。",
+      "gameplay.talk.title": "靠近交谈 · AI 对话",
+      "gameplay.talk.body":
+        "走到村民身边打开羊皮纸对话框。每个元素都能挂上 AI 聊天模型，闲谈不必只是预设台词。",
+      "gameplay.quest.title": "万物皆可接任务",
+      "gameplay.quest.body":
+        "NPC、物件、小动物都能发布琐事——补货、采药、走访。编辑器里还可自定义并多选挂载。",
       "gameplay.animals.title": "会走的小动物",
-      "gameplay.animals.body": "猫、狗、鸭子与小鸟在村中游荡，有时它们本身就是故事的线索。",
-      "gameplay.portal.title": "传送门",
-      "gameplay.portal.body": "村口通向河埠、后山、雪原、海湾与夜市——世界通过拱门自然相连。",
+      "gameplay.animals.body":
+        "猫、狗、鸭子与小鸟在村中游荡，有时它们本身就是故事的线索。",
+      "gameplay.snap.title": "随手拍照",
+      "gameplay.snap.body":
+        "在游戏画面里随时截取当前场景，留下村庄日常；未来还能上传作品参与社区评选。",
       "elements.eyebrow": "场景元素",
       "elements.title": "漂亮的像素物件，组成你的村庄",
       "elements.lead": "从春日杂货铺到灯塔与夜市点心铺——编辑器目录里已有成百上千可放置元素。",
@@ -61,15 +66,20 @@
       "editor.eyebrow": "地图编辑器",
       "editor.title": "不只是玩，也可以创作世界",
       "editor.lead":
-        "编辑器内置多套美术风格、元素目录、碰撞区域与传送门。生成场景协议后，可直接在游戏里试玩。",
+        "编辑器内置多套美术风格、元素目录、任务与 AI 对话配置、碰撞与传送门。生成场景协议后，可直接在游戏里试玩。",
       "editor.s1.title": "选择风格地面",
-      "editor.s1.body": "田园、春樱、秋收、冬雪、海滨、沙漠、夜市……一键切换地面与调色板。",
+      "editor.s1.body":
+        "田园、春樱、秋收、冬雪、海滨、沙漠、夜市……一键切换地面与调色板。也可从外部导入已创建好的场景地面。",
       "editor.s2.title": "放置元素与 NPC",
-      "editor.s2.body": "从建筑、树木、道具到村民与小动物，拖进画布即可布置。",
-      "editor.s3.title": "绘制碰撞与传送",
-      "editor.s3.body": "标记不可行走区域，架起通往其他场景的传送门。",
-      "editor.s4.title": "生成并试玩",
-      "editor.s4.body": "保存 oasis/1 场景协议，立刻进入游戏验证你的地图。",
+      "editor.s2.body":
+        "建筑、树木、道具、村民与小动物，拖进画布即可布置。也可从外部导入已创建好的游戏元素。",
+      "editor.s3.title": "万物挂任务 · 配 AI 模型",
+      "editor.s3.body":
+        "选中任意元素即可多选挂载任务，并为它指定 AI 聊天模型——场景自带故事，也能开口闲谈。",
+      "editor.s4.title": "绘制碰撞与传送",
+      "editor.s4.body": "标记不可行走区域，架起通往其他场景的传送门。",
+      "editor.s5.title": "生成并试玩",
+      "editor.s5.body": "保存 oasis/1 场景协议，立刻进游戏验证地图；试玩中还能随手拍照截屏。",
       "editor.cta": "看看别人的场景",
       "editor.boardLabel": "Scene Preview · oasis-village",
       "editor.badgeStyle": "Style · classic",
@@ -118,22 +128,23 @@
         "From pastoral lanes to the lantern night market — each scene is made for walking, talking, and small errands.",
       "gameplay.eyebrow": "Gameplay",
       "gameplay.title": "An ordinary person's daily practice",
-      "gameplay.lead": "No combat stat sheet. You simply enter the village and take care of little things.",
+      "gameplay.lead":
+        "No combat stat sheet. You enter the village and take care of little things — hang quests on any element, chat with AI, and snap photos of the day.",
       "gameplay.walk.title": "Click to walk",
       "gameplay.walk.body":
-        "Tap the ground and your character strolls along a path. Maps support collision and panning views.",
-      "gameplay.talk.title": "Talk up close",
+        "Tap the ground and your character strolls a path. Village portals open onto river docks, back hills, snow camps, and night markets.",
+      "gameplay.talk.title": "Talk up close · AI chat",
       "gameplay.talk.body":
-        "Approach villagers to open a parchment dialog — chat, or see the chores on their mind.",
-      "gameplay.quest.title": "Neighbor errands",
+        "Approach anyone to open a parchment dialog. Any element can host its own AI chat model — talk goes beyond canned lines.",
+      "gameplay.quest.title": "Quests on everything",
       "gameplay.quest.body":
-        "Restock shops, find cats, gather herbs, sweep yards — quests run on talk, errands, finds, and visits.",
+        "NPCs, props, and animals can all offer errands — restock, gather herbs, pay visits. Design custom quests in the editor and attach several at once.",
       "gameplay.animals.title": "Wandering animals",
       "gameplay.animals.body":
-        "Cats, dogs, ducks, and birds roam the village; sometimes they are the story itself.",
-      "gameplay.portal.title": "Portals",
-      "gameplay.portal.body":
-        "The village opens onto river docks, back hills, snow camps, seaside coves, and night markets.",
+        "Cats, dogs, ducks, and birds roam the village; sometimes they are the story themselves.",
+      "gameplay.snap.title": "Snap the moment",
+      "gameplay.snap.body":
+        "Capture the live game view anytime and keep your village days. Community photo contests are on the way.",
       "elements.eyebrow": "Scene elements",
       "elements.title": "Pretty pixel props that build your village",
       "elements.lead":
@@ -159,16 +170,21 @@
       "editor.eyebrow": "Map Editor",
       "editor.title": "Not just play — build the world",
       "editor.lead":
-        "The editor ships style packs, a prop catalog, collision regions, and portals. Generate a scene protocol and play it right away.",
+        "The editor ships style packs, a prop catalog, quests and AI chat hooks, collision, and portals. Generate a scene protocol and play it right away.",
       "editor.s1.title": "Pick a style ground",
       "editor.s1.body":
-        "Village, spring, harvest, winter, coastal, desert, night — switch ground and palette in one click.",
+        "Village, spring, harvest, winter, coastal, desert, night — switch ground and palette in one click. You can also import ready-made scene grounds from outside.",
       "editor.s2.title": "Place props & NPCs",
-      "editor.s2.body": "Buildings, trees, props, villagers, and animals — drop them onto the canvas.",
-      "editor.s3.title": "Draw collision & portals",
-      "editor.s3.body": "Mark blocked areas and link scenes with portals.",
-      "editor.s4.title": "Generate & play",
-      "editor.s4.body": "Save an oasis/1 scene protocol and jump in to test your map.",
+      "editor.s2.body":
+        "Buildings, trees, props, villagers, and animals — drop them onto the canvas. You can also import ready-made game elements from outside.",
+      "editor.s3.title": "Hang quests · set AI models",
+      "editor.s3.body":
+        "Select any element to multi-attach quests and assign its own AI chat model — scenes that carry stories and can small-talk.",
+      "editor.s4.title": "Draw collision & portals",
+      "editor.s4.body": "Mark blocked areas and link scenes with portals.",
+      "editor.s5.title": "Generate & play",
+      "editor.s5.body":
+        "Save an oasis/1 scene protocol, jump in to test the map — and snap screenshots while you play.",
       "editor.cta": "See others' scenes",
       "editor.boardLabel": "Scene Preview · oasis-village",
       "editor.badgeStyle": "Style · classic",

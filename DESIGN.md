@@ -40,9 +40,9 @@ Stardew Valley title manual × illustrated village field guide: deep-night map b
 1. **Nav** — Home / Gameplay / Worlds / Editor / Gallery + X · Discord · GitHub placeholders + 中/EN
 2. **Hero** — brand icon + gold wordmark 绿洲村 · Oasis Village, tagline from game, dual CTA (Explore scenes / Open editor), dusk map underlay
 3. **Scene carousel (signature)** — horizontal 走马灯 of bundled worlds using `*-open-3200` / ground maps + parchment captions (name, tagline)
-4. **Gameplay loop** — click-walk, talk & chat, quests, animals, portals — prop/NPC icons + short copy
+4. **Gameplay loop** — five cards (walk+portals, talk+AI chat, quests on any element, animals, snap photo) + marquee of gameplay scene images
 5. **Element showcase** — pretty props (春日杂货铺, teahouse, sakura, clinic, lighthouse…) explaining what you place in the editor
-6. **Editor** — pick a style pack → place props → draw collision → generate scene → play now
+6. **Editor** — five steps (style ground / place props / hang quests & AI models / collision & portals / generate & play) + editor board + marquee of feature images
 7. **Gallery** — player/featured scene cards (seeded with bundled worlds as showcase placeholders; ready for real submissions)
 8. **Community footer** — social placeholders + short about
 

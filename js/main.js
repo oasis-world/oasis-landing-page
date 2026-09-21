@@ -14,6 +14,12 @@
       if (!key) return;
       el.textContent = I18n.t(lang, key);
     });
+    document.querySelectorAll("[data-i18n-attr-alt]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-attr-alt");
+      if (!key) return;
+      const val = I18n.t(lang, key);
+      if (val) el.setAttribute("alt", val);
+    });
     const label = document.querySelector("[data-lang-label]");
     if (label) label.textContent = lang === "zh" ? "EN" : "中";
     document.querySelectorAll("[data-play-game]").forEach((el) => {
@@ -348,6 +354,17 @@
     nodes.forEach((n) => io.observe(n));
   }
 
+  /* ---------- Marquees (gameplay / editor) ---------- */
+  function setupMarquees() {
+    if (reduceMotion) return;
+    // Duplicate slides once so the CSS -50% translate loops seamlessly.
+    document.querySelectorAll("[data-marquee-track]").forEach((track) => {
+      if (track.dataset.cloned === "1") return;
+      track.insertAdjacentHTML("beforeend", track.innerHTML);
+      track.dataset.cloned = "1";
+    });
+  }
+
   /* ---------- Boot ---------- */
   function bootScrollTop() {
     // Refresh always lands at the top, then eases there if the browser restored scroll.
@@ -362,6 +379,7 @@
 
   bootScrollTop();
   applyStaticI18n();
+  setupMarquees();
   bindNav();
   bindCarousel();
   renderGallery();

@@ -41,8 +41,8 @@
         </button>
 
         <nav class="nav-links" id="nav-drawer" data-nav-links>
-          <a href="#gameplay" data-i18n="nav.gameplay">玩法</a>
           <a href="#worlds" data-i18n="nav.worlds">世界</a>
+          <a href="#gameplay" data-i18n="nav.gameplay">玩法</a>
           <a href="#elements" data-i18n="nav.elements">元素</a>
           <a href="#editor" data-i18n="nav.editor">编辑器</a>
           <a href="#gallery" data-i18n="nav.gallery">画廊</a>
@@ -63,7 +63,7 @@
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.5l-5.1-6.7L5.7 22H2.6l7.3-8.3L1 2h6.7l4.6 6.1L18.9 2Zm-1.1 18h1.8L6.3 3.9H4.4L17.8 20Z"/></svg>
             </a>
             <a
-              class="social-btn social-boost"
+              class="social-btn social-boost social-discord"
               href="https://discord.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -189,7 +189,8 @@
             <p class="eyebrow" data-i18n="gameplay.eyebrow">玩法</p>
             <h2 id="gameplay-title" data-i18n="gameplay.title">一个普通人的日常修行</h2>
             <p class="section-lead" data-i18n="gameplay.lead">
-              没有战斗数值表。你只是走进村庄，把一件件小事做好。
+              没有战斗数值表。你只是走进村庄，把一件件小事做好——元素可挂任务与
+              AI 对话，也能随手拍照留念。
             </p>
           </div>
 
@@ -199,21 +200,28 @@
                 <img src="assets/cast/player.png" alt="" class="pixel" />
               </div>
               <h3 data-i18n="gameplay.walk.title">点击漫步</h3>
-              <p data-i18n="gameplay.walk.body">点一下地面，角色会沿路径慢慢走过去。地图支持碰撞与视野移动。</p>
+              <p data-i18n="gameplay.walk.body">
+                点一下地面，角色沿路径慢慢走过去。村口传送门通向河埠、后山、雪原与夜市。
+              </p>
             </article>
             <article class="feature-card">
               <div class="feature-icon">
-                <img src="assets/cast/npc-wang.png" alt="" class="pixel tall" />
+                <img src="assets/brand/guide-portrait.png" alt="" class="contain" />
               </div>
-              <h3 data-i18n="gameplay.talk.title">靠近交谈</h3>
-              <p data-i18n="gameplay.talk.body">走到村民身边打开羊皮纸对话框：聊天，或查看他们正愁的琐事。</p>
+              <h3 data-i18n="gameplay.talk.title">靠近交谈 · AI 对话</h3>
+              <p data-i18n="gameplay.talk.body">
+                走到村民身边打开羊皮纸对话框。每个元素都能挂上 AI
+                聊天模型，闲谈不必只是预设台词。
+              </p>
             </article>
             <article class="feature-card">
               <div class="feature-icon">
                 <img src="assets/props/wang-store.png" alt="" class="contain" />
               </div>
-              <h3 data-i18n="gameplay.quest.title">邻里琐事</h3>
-              <p data-i18n="gameplay.quest.body">补货、找猫、采药、扫院子……任务以谈话、跑腿、寻找与走访展开。</p>
+              <h3 data-i18n="gameplay.quest.title">万物皆可接任务</h3>
+              <p data-i18n="gameplay.quest.body">
+                NPC、物件、小动物都能发布琐事——补货、采药、走访。编辑器里还可自定义并多选挂载。
+              </p>
             </article>
             <article class="feature-card">
               <div class="feature-icon">
@@ -221,15 +229,73 @@
                 <img src="assets/cast/dog.png" alt="" class="pixel" />
               </div>
               <h3 data-i18n="gameplay.animals.title">会走的小动物</h3>
-              <p data-i18n="gameplay.animals.body">猫、狗、鸭子与小鸟在村中游荡，有时它们本身就是故事的线索。</p>
+              <p data-i18n="gameplay.animals.body">
+                猫、狗、鸭子与小鸟在村中游荡，有时它们本身就是故事的线索。
+              </p>
             </article>
             <article class="feature-card">
               <div class="feature-icon">
-                <img src="assets/brand/portal-arch.png" alt="" class="contain" />
+                <img src="assets/brand/brand-icon.png" alt="" class="contain" />
               </div>
-              <h3 data-i18n="gameplay.portal.title">传送门</h3>
-              <p data-i18n="gameplay.portal.body">村口通向河埠、后山、雪原、海湾与夜市——世界通过拱门自然相连。</p>
+              <h3 data-i18n="gameplay.snap.title">随手拍照</h3>
+              <p data-i18n="gameplay.snap.body">
+                在游戏画面里随时截取当前场景，留下村庄日常；未来还能上传作品参与社区评选。
+              </p>
             </article>
+          </div>
+
+          <div
+            class="gameplay-marquee reveal"
+            data-gameplay-marquee
+            aria-label="Gameplay moments"
+          >
+            <div class="marquee-track" data-marquee-track>
+              <figure class="marquee-slide">
+                <img
+                  src="assets/gameplay/walk.jpg"
+                  alt=""
+                  data-i18n-attr-alt="gameplay.walk.title"
+                  loading="lazy"
+                />
+                <figcaption data-i18n="gameplay.walk.title">点击漫步</figcaption>
+              </figure>
+              <figure class="marquee-slide">
+                <img
+                  src="assets/gameplay/talk.jpg"
+                  alt=""
+                  data-i18n-attr-alt="gameplay.talk.title"
+                  loading="lazy"
+                />
+                <figcaption data-i18n="gameplay.talk.title">靠近交谈 · AI 对话</figcaption>
+              </figure>
+              <figure class="marquee-slide">
+                <img
+                  src="assets/gameplay/quest.jpg"
+                  alt=""
+                  data-i18n-attr-alt="gameplay.quest.title"
+                  loading="lazy"
+                />
+                <figcaption data-i18n="gameplay.quest.title">万物皆可接任务</figcaption>
+              </figure>
+              <figure class="marquee-slide">
+                <img
+                  src="assets/gameplay/animals.jpg"
+                  alt=""
+                  data-i18n-attr-alt="gameplay.animals.title"
+                  loading="lazy"
+                />
+                <figcaption data-i18n="gameplay.animals.title">会走的小动物</figcaption>
+              </figure>
+              <figure class="marquee-slide">
+                <img
+                  src="assets/gameplay/snap.jpg"
+                  alt=""
+                  data-i18n-attr-alt="gameplay.snap.title"
+                  loading="lazy"
+                />
+                <figcaption data-i18n="gameplay.snap.title">随手拍照</figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </section>
@@ -334,40 +400,56 @@
       <!-- EDITOR -->
       <section class="section section-parchment" id="editor" aria-labelledby="editor-title">
         <div class="section-inner">
+          <div class="section-head reveal">
+            <p class="eyebrow" data-i18n="editor.eyebrow">地图编辑器</p>
+            <h2 id="editor-title" data-i18n="editor.title">不只是玩，也可以创作世界</h2>
+            <p class="section-lead" data-i18n="editor.lead">
+              编辑器内置多套美术风格、元素目录、任务与 AI 对话配置、碰撞与传送门。生成场景协议后，可直接在游戏里试玩。
+            </p>
+          </div>
+
           <div class="editor-layout reveal">
             <div class="editor-copy">
-              <p class="eyebrow" data-i18n="editor.eyebrow">地图编辑器</p>
-              <h2 id="editor-title" data-i18n="editor.title">不只是玩，也可以创作世界</h2>
-              <p class="section-lead" data-i18n="editor.lead">
-                编辑器内置多套美术风格、元素目录、碰撞区域与传送门。生成场景协议后，可直接在游戏里试玩。
-              </p>
               <ol class="editor-steps">
                 <li>
                   <span class="step-num">01</span>
                   <div>
                     <strong data-i18n="editor.s1.title">选择风格地面</strong>
-                    <p data-i18n="editor.s1.body">田园、春樱、秋收、冬雪、海滨、沙漠、夜市……一键切换地面与调色板。</p>
+                    <p data-i18n="editor.s1.body">
+                      田园、春樱、秋收、冬雪、海滨、沙漠、夜市……一键切换地面与调色板。也可从外部导入已创建好的场景地面。
+                    </p>
                   </div>
                 </li>
                 <li>
                   <span class="step-num">02</span>
                   <div>
                     <strong data-i18n="editor.s2.title">放置元素与 NPC</strong>
-                    <p data-i18n="editor.s2.body">从建筑、树木、道具到村民与小动物，拖进画布即可布置。</p>
+                    <p data-i18n="editor.s2.body">
+                      建筑、树木、道具、村民与小动物，拖进画布即可布置。也可从外部导入已创建好的游戏元素。
+                    </p>
                   </div>
                 </li>
                 <li>
                   <span class="step-num">03</span>
                   <div>
-                    <strong data-i18n="editor.s3.title">绘制碰撞与传送</strong>
-                    <p data-i18n="editor.s3.body">标记不可行走区域，架起通往其他场景的传送门。</p>
+                    <strong data-i18n="editor.s3.title">万物挂任务 · 配 AI 模型</strong>
+                    <p data-i18n="editor.s3.body">
+                      选中任意元素即可多选挂载任务，并为它指定 AI 聊天模型——场景自带故事，也能开口闲谈。
+                    </p>
                   </div>
                 </li>
                 <li>
                   <span class="step-num">04</span>
                   <div>
-                    <strong data-i18n="editor.s4.title">生成并试玩</strong>
-                    <p data-i18n="editor.s4.body">保存 oasis/1 场景协议，立刻进入游戏验证你的地图。</p>
+                    <strong data-i18n="editor.s4.title">绘制碰撞与传送</strong>
+                    <p data-i18n="editor.s4.body">标记不可行走区域，架起通往其他场景的传送门。</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">05</span>
+                  <div>
+                    <strong data-i18n="editor.s5.title">生成并试玩</strong>
+                    <p data-i18n="editor.s5.body">保存 oasis/1 场景协议，立刻进游戏验证地图；试玩中还能随手拍照截屏。</p>
                   </div>
                 </li>
               </ol>
@@ -392,6 +474,60 @@
                   <span class="badge ok" data-i18n="editor.badgeReady">Ready to play</span>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div
+            class="gameplay-marquee editor-marquee reveal"
+            data-editor-marquee
+            aria-label="Map editor features"
+          >
+            <div class="marquee-track" data-marquee-track>
+              <figure class="marquee-slide">
+                <img
+                  src="assets/editor/style-ground.jpg"
+                  alt=""
+                  data-i18n-attr-alt="editor.s1.title"
+                  loading="lazy"
+                />
+                <figcaption data-i18n="editor.s1.title">选择风格地面</figcaption>
+              </figure>
+              <figure class="marquee-slide">
+                <img
+                  src="assets/editor/place-props.jpg"
+                  alt=""
+                  data-i18n-attr-alt="editor.s2.title"
+                  loading="lazy"
+                />
+                <figcaption data-i18n="editor.s2.title">放置元素与 NPC</figcaption>
+              </figure>
+              <figure class="marquee-slide">
+                <img
+                  src="assets/editor/quest-ai.jpg"
+                  alt=""
+                  data-i18n-attr-alt="editor.s3.title"
+                  loading="lazy"
+                />
+                <figcaption data-i18n="editor.s3.title">万物挂任务 · 配 AI 模型</figcaption>
+              </figure>
+              <figure class="marquee-slide">
+                <img
+                  src="assets/editor/collision-portals.jpg"
+                  alt=""
+                  data-i18n-attr-alt="editor.s4.title"
+                  loading="lazy"
+                />
+                <figcaption data-i18n="editor.s4.title">绘制碰撞与传送</figcaption>
+              </figure>
+              <figure class="marquee-slide">
+                <img
+                  src="assets/editor/generate-play.jpg"
+                  alt=""
+                  data-i18n-attr-alt="editor.s5.title"
+                  loading="lazy"
+                />
+                <figcaption data-i18n="editor.s5.title">生成并试玩</figcaption>
+              </figure>
             </div>
           </div>
         </div>
@@ -441,7 +577,7 @@
             </a>
             <a class="community-card" href="https://discord.com/" target="_blank" rel="noopener noreferrer">
               <span class="community-icon" aria-hidden="true">
-                <svg class="icon-boost" viewBox="0 0 24 24"><path d="M19.3 5.2A16.4 16.4 0 0 0 15.4 4l-.2.4c1.4.3 2.2.8 2.2.8-1-.5-2-.8-3.1-1l-.3-.1c-1.1-.2-2.3-.2-3.5 0l-.3.1c-1.1.2-2.1.5-3.1 1 0 0 .9-.5 2.3-.8L10.1 4c-1.3.2-2.6.6-3.7 1.2C4.2 8.7 3.5 12 3.8 15.3c1.4 1 2.8 1.7 4.2 2.1l.9-1.5c-.5-.2-1-.5-1.5-.8l.3-.2c2.9 1.3 6 1.3 8.9 0l.3.2c-.5.3-1 .6-1.5.8l.9 1.5c1.4-.4 2.8-1.1 4.2-2.1.4-3.8-.6-7-2.2-10.1ZM9.7 13.5c-.8 0-1.5-.8-1.5-1.7s.7-1.7 1.5-1.7 1.5.8 1.5 1.7-.7 1.7-1.5 1.7Zm4.6 0c-.8 0-1.5-.8-1.5-1.7s.7-1.7 1.5-1.7 1.5.8 1.5 1.7-.6 1.7-1.5 1.7Z"/></svg>
+                <svg class="icon-boost icon-discord" viewBox="0 0 24 24"><path d="M19.3 5.2A16.4 16.4 0 0 0 15.4 4l-.2.4c1.4.3 2.2.8 2.2.8-1-.5-2-.8-3.1-1l-.3-.1c-1.1-.2-2.3-.2-3.5 0l-.3.1c-1.1.2-2.1.5-3.1 1 0 0 .9-.5 2.3-.8L10.1 4c-1.3.2-2.6.6-3.7 1.2C4.2 8.7 3.5 12 3.8 15.3c1.4 1 2.8 1.7 4.2 2.1l.9-1.5c-.5-.2-1-.5-1.5-.8l.3-.2c2.9 1.3 6 1.3 8.9 0l.3.2c-.5.3-1 .6-1.5.8l.9 1.5c1.4-.4 2.8-1.1 4.2-2.1.4-3.8-.6-7-2.2-10.1ZM9.7 13.5c-.8 0-1.5-.8-1.5-1.7s.7-1.7 1.5-1.7 1.5.8 1.5 1.7-.7 1.7-1.5 1.7Zm4.6 0c-.8 0-1.5-.8-1.5-1.7s.7-1.7 1.5-1.7 1.5.8 1.5 1.7-.6 1.7-1.5 1.7Z"/></svg>
               </span>
               <strong>Discord</strong>
               <span data-i18n="community.discord">场景分享与联机讨论</span>
