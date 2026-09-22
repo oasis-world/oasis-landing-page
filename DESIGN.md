@@ -71,5 +71,11 @@ X / Discord / GitHub are reserved hrefs (`#` or placeholder `https://…`) with 
 
 ## Delivery
 Static site in oasis-landing-page:
-`index.html` + `css/styles.css` + `js/i18n.js` + `js/main.js` + local `assets/`.
+`index.html` + `css/styles.css` (desktop/base) + `css/mobile.css` (responsive only)
++ `js/i18n.js` + `js/main.js` (shared) + `js/mobile.js` (mobile-only) + local `assets/`.
 No build step required for browser preview.
+
+## Responsive split
+- Desktop rules stay in `styles.css`; **do not** add `max-width` queries there.
+- All phone/tablet/touch rules live in `mobile.css` (breakpoints 1024 / 820 / 560 / 380 + landscape).
+- Mobile JS (drawer lock, scrim, off-screen marquee pause) lives only in `mobile.js`.
