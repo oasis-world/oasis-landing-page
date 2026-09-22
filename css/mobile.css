@@ -365,6 +365,11 @@ body {
     border-radius: 14px;
   }
 
+  html[lang="en"] .hero-content {
+    /* EN logo uses --hero-logo-y: -32% (112px → ~76px into the panel). */
+    padding-top: 88px;
+  }
+
   .hero-logo img {
     width: 112px;
     height: 112px;
@@ -636,6 +641,11 @@ body {
     padding: 56px 12px 20px;
   }
 
+  html[lang="en"] .hero-content {
+    /* EN logo at -32% of 96px ≈ 65px into the panel. */
+    padding-top: 76px;
+  }
+
   .hero-logo img {
     width: 96px;
     height: 96px;
@@ -693,6 +703,11 @@ body {
 
   .hero-content {
     padding-top: 48px;
+  }
+
+  html[lang="en"] .hero-content {
+    /* EN logo at -32% of 80px ≈ 54px into the panel. */
+    padding-top: 64px;
   }
 
   .hero-cast {

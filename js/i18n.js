@@ -90,12 +90,12 @@
       "gallery.lead":
         "这里展示社区创作的优秀场景。以下先以官方范例世界起头——欢迎投稿你的地图。",
       "gallery.note":
-        "提交你的 oasis/1 场景 JSON 或截图后，将收录进官方 Gallery。链接占位：X / Discord / GitHub。",
+        "提交你的 oasis/1 场景 JSON 或截图后，将收录进官方 Gallery。可通过 X / Discord / GitHub 联系社区。",
       "gallery.cta": "联系社区投稿",
       "community.eyebrow": "社区",
       "community.title": "加入绿洲村",
       "community.lead":
-        "关注开发进度、分享场景、讨论任务设计。社交入口已预留，稍后填入正式链接即可。",
+        "关注开发进度、分享场景、讨论任务设计。欢迎通过 X、Discord 和 GitHub 加入我们。",
       "community.x": "最新公告与截图",
       "community.discord": "场景分享与讨论",
       "community.github": "开源协议与问题反馈",
@@ -195,12 +195,12 @@
       "gallery.lead":
         "A showcase for community-built worlds. These official example scenes seed the gallery — submit yours next.",
       "gallery.note":
-        "Share your oasis/1 scene JSON or screenshots to be featured. Social links are reserved for X / Discord / GitHub.",
+        "Share your oasis/1 scene JSON or screenshots to be featured. Reach the community via X / Discord / GitHub.",
       "gallery.cta": "Contact community",
       "community.eyebrow": "Community",
       "community.title": "Join Oasis Village",
       "community.lead":
-        "Follow development, share maps, discuss quest design. Social entry points are reserved — swap in official URLs later.",
+        "Follow development, share maps, discuss quest design. Join us on X, Discord, and GitHub.",
       "community.x": "News & screenshots",
       "community.discord": "Scene sharing & discussion",
       "community.github": "Protocol & issue tracker",

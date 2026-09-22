@@ -28,4 +28,4 @@ Why not `vite build`? Classic `<script src="js/...">` tags are not bundled, and 
 URLs inside `js/i18n.js` must keep stable `assets/...` paths — bundling broke deploys
 (solid section colors, invisible `.reveal` content).
 
-Bilingual zh/en (follows system language). Play Game URL is reserved (`href="#"`).
+Bilingual zh/en (follows system language). Play Game points to `https://oasis-game-v1.vercel.app`.

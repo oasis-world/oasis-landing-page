@@ -24,11 +24,6 @@
     if (label) label.textContent = lang === "zh" ? "EN" : "中";
     document.querySelectorAll("[data-play-game]").forEach((el) => {
       el.setAttribute("aria-label", I18n.t(lang, "playGameAria"));
-      // Reserved launch URL — swap when the game build is hosted.
-      if (!el.getAttribute("href") || el.getAttribute("href") === "#") {
-        el.setAttribute("href", "#");
-        el.setAttribute("data-play-url-reserved", "true");
-      }
     });
     const year = document.querySelector("[data-year]");
     if (year) year.textContent = String(new Date().getFullYear());
