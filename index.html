@@ -2,14 +2,21 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- viewport-fit=cover：刘海/圆角屏铺满；配合 css/mobile.css 的 safe-area 留白 -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
     <meta
       name="description"
       content="Oasis Village 绿洲村 — a cozy life-sim where ordinary days shape a peaceful person."
     />
     <title>Oasis Village · 绿洲村</title>
     <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg" />
+    <!-- Desktop/base styles（桌面与基础布局） -->
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- Mobile/responsive styles（仅 max-width 断点 + 触控增强，加载在后以覆盖） -->
+    <link rel="stylesheet" href="css/mobile.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -609,5 +616,7 @@
 
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
+    <!-- Mobile-only interactions（抽屉滚动锁、触控增强；不改 desktop 行为） -->
+    <script src="js/mobile.js" defer></script>
   </body>
 </html>
