@@ -5,6 +5,10 @@
   const I18n = window.OasisI18n;
   if (!I18n) return;
 
+  // Only after i18n is known-good: opt into hidden-until-reveal animation.
+  // If scripts 404 (bad CDN build), this never runs and CSS keeps content visible.
+  document.documentElement.classList.add("js");
+
   let lang = I18n.storedLang() || I18n.detectSystemLang();
 
   function applyStaticI18n() {

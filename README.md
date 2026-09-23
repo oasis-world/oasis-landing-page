@@ -15,17 +15,35 @@ Open `index.html` in a browser, or serve the folder locally.
 
 ## Deploy (Vercel)
 
-Production build copies the static runtime into `dist/` (does **not** run `vite build`):
-
 ```bash
-npm run build   # → dist/
+npm run build   # static copy → dist/ (not vite build)
 ```
 
 `vercel.json` sets `framework: null` so Vercel does not treat this as a Vite SPA.
-If the Vercel dashboard still has Framework Preset = Vite, clear it or rely on `vercel.json`.
 
-Why not `vite build`? Classic `<script src="js/...">` tags are not bundled, and scene
-URLs inside `js/i18n.js` must keep stable `assets/...` paths — bundling broke deploys
-(solid section colors, invisible `.reveal` content).
+## Deploy (Cloudflare Workers / Pages)
+
+Same output: `dist/`. **Do not** deploy a raw `vite build` — classic `js/*.js`
+scripts are not bundled; with SPA fallback they return HTML, JS fails, and
+`.reveal` content stays hidden (you only see section background colors).
+
+```bash
+npm run build
+npx wrangler deploy    # uses wrangler.toml → assets from ./dist
+```
+
+Cloudflare Pages dashboard:
+
+| Setting | Value |
+|--------|--------|
+| Framework preset | **None** (not Vite) |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+
+`wrangler.toml` sets `not_found_handling = "404"` so `/js/main.js` does not
+fall back to `index.html`.
+
+`.reveal` only hides after `html.js` is set by `main.js` — if scripts fail to
+load, body copy still renders.
 
 Bilingual zh/en (follows system language). Play Game points to `https://oasis-game-v1.vercel.app`.

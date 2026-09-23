@@ -1678,20 +1678,30 @@ button {
   font-size: 12px;
 }
 
-/* ---------- Reveal ---------- */
-
+/* ---------- Reveal ----------
+   Progressive enhancement:
+   - Default (no html.js): content fully visible — survives JS 404 / failed deploy.
+   - main.js adds html.js only after i18n loads, then hides .reveal for animation. */
 .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+html.js .reveal:not(.is-visible) {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-.reveal.is-visible {
+html.js .reveal.is-visible {
   opacity: 1;
   transform: none;
+  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html.js .reveal:not(.is-visible),
+  html.js .reveal.is-visible,
   .reveal {
     opacity: 1;
     transform: none;

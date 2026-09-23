@@ -1,0 +1,20 @@
+# Cloudflare Workers (static assets) — https://oasis-landing-page.oasis-world-game.workers.dev
+# Deploy:  npm run build && npx wrangler deploy
+#
+# Do NOT point this project at a raw `vite build` output:
+# classic <script src="js/..."> tags are left unbundled and 404/HTML-fallback,
+# which leaves content hidden behind .reveal until JS fails.
+
+name = "oasis-landing-page"
+compatibility_date = "2026-09-22"
+
+[assets]
+directory = "./dist"
+# Missing files → 404, not index.html.
+# SPA fallback was returning HTML for /js/*.js; browsers then fail to parse it as JS.
+not_found_handling = "404"
+html_handling = "auto-trailing-slash"
+
+# Cloudflare Pages alternative:
+#   pages_build_output_dir = "dist"
+# Dashboard: Framework = None, Build command = `npm run build`, Output = `dist`
